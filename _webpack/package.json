@@ -1,0 +1,58 @@
+{
+  "name": "Webpack-HTML-Boilerplate",
+  "version": "1.0.0",
+  "description": "A boilerplate to build HTML pages with Webpack",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --config webpack.dev.js",
+    "build": "webpack --config webpack.pro.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cristobaldominguez/Webpack-HTML-Boilerplate.git"
+  },
+  "keywords": [
+    "Boilerplate",
+    "HTML",
+    "Webpack",
+    "SCSS"
+  ],
+  "author": {
+    "name": "Cristobal Dominguez",
+    "email": "cristobald@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cristobaldominguez/Webpack-HTML-Boilerplate"
+  },
+  "homepage": "https://github.com/cristobaldominguez/Webpack-HTML-Boilerplate#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/register": "^7.5.5",
+    "autoprefixer": "^9.6.1",
+    "babel-loader": "^8.0.6",
+    "browserslist": "^4.6.6",
+    "clean-terminal-webpack-plugin": "^2.0.4",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-hot-loader": "^1.4.4",
+    "css-loader": "^3.2.0",
+    "file-loader": "^4.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.12.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.2.0",
+    "terser-webpack-plugin": "^1.4.1",
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.8.0",
+    "webpack-merge": "^4.2.1"
+  },
+  "browserslist": [
+    "> 1%",
+    "IE 10",
+    "not dead"
+  ]
+}
