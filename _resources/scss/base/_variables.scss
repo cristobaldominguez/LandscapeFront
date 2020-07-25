@@ -1,1 +1,30 @@
-:root {}
+:root {
+    --main-bg:  #f9f9f9;
+    --border-color: #999;
+    --highlight-color: tomato;
+    --header-description: #555;
+    --card-shadow: #c3c3c3;
+    --card-border-shadow: 3px;
+    --card-bg: #fff;
+    --card-color: #000;
+    --card-author-name: #000;
+    --social-text: #888;
+    --social-number: #000;
+    --social-borders: #eee;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --main-bg:  #222;
+      --border-color: #333;
+      --header-description: #aaa;
+      --card-shadow: #000;
+      --card-border-shadow: 3px;
+      --card-bg: #151515;
+      --card-color: #bbb;
+      --card-author-name: #fff;
+      --social-text: #aaa;
+      --social-number: #ccc;
+      --social-borders: #333;
+    }
+  }

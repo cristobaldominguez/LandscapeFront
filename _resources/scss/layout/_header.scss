@@ -1,0 +1,18 @@
+.header {
+
+    &__main {
+        margin: 50px auto;
+        max-width: 512px;
+    }
+
+    &__title {
+        color: var(--highlight-color);
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__description {
+        font-size: 0.9rem;
+        color: var(--header-description);
+    }
+}

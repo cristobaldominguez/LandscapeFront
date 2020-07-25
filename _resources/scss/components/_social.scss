@@ -1,0 +1,43 @@
+.social {
+    border-bottom: 1px solid var(--social-borders);
+    border-top: 1px solid var(--social-borders);
+    font-size: .9rem;
+    margin: 40px 10% 20px;
+    padding: 10px 0;
+    text-align: center;
+    width: 80%;
+
+    &__element {
+        display: inline-block;
+        margin: 0 2em;
+        text-align: center;
+    }
+
+    &__number,
+    &__text {
+        font-family: 'Open Sans';
+    }
+
+    &__number {
+        color: var(--social-number);
+        font-size: 2.1em;
+        font-weight: 400;
+    }
+
+    &__text {
+        color: var(--social-text);
+        font-size: 1em;
+        font-weight: 300;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .social {
+        margin: 10px 10% 10px;
+
+        &__element {
+            margin: 0 0.75em;
+        }
+    }
+}
