@@ -9,11 +9,20 @@
 <body>
 
   <header class="header__main">
-    <h1 class="header__title">Landscapes</h1>
-    <form action="#" class="form__search">
-      <input type="text" name="s" value="" placeholder="Search" class="form__input"><input type="submit" name="" value="&#9906;" class="form__submit">
-    </form>
-    <p class="header__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur quia corrupti praesentium nemo aliquid, eius voluptate vel? Officiis reiciendis at ducimus laboriosam dolor voluptatum, debitis autem dolorem eum error maiores.</p>
+    <div class="header__picture-div">
+      <picture class="header__picture">
+        <source srcset="./assets/images/header/day.jpg" media="(prefers-color-scheme: light)">
+        <source srcset="./assets/images/header/night.jpg" media="(prefers-color-scheme: dark)">
+        <img class="header__img" src="./assets/images/header/day.jpg">
+      </picture>
+    </div>
+    <div class="header__container">
+      <h1 class="header__title">Landscapes</h1>
+      <form action="#" class="form__search">
+        <input type="text" name="s" value="" placeholder="Search" class="form__input"><input type="submit" name="" value="&#9906;" class="form__submit">
+      </form>
+      <p class="header__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur quia corrupti praesentium nemo aliquid, eius voluptate vel? Officiis reiciendis at ducimus laboriosam dolor voluptatum, debitis autem dolorem eum error maiores.</p>
+    </div>
   </header>
 
   <ul class="cards">

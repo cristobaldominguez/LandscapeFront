@@ -1,8 +1,12 @@
 :root {
     --main-bg:  #f9f9f9;
     --border-color: #999;
-    --highlight-color: tomato;
-    --header-description: #555;
+    
+    --highlight-color: #000;
+    --search-placeholder-color: #000;
+    --search-boder-bottom: var(--border-color);
+    --header-description: #000;
+
     --card-shadow: #c3c3c3;
     --card-border-shadow: 3px;
     --card-bg: #fff;
@@ -17,9 +21,13 @@
     :root {
       --main-bg:  #222;
       --border-color: #333;
-      --header-description: #aaa;
+
+      --highlight-color: tomato;
+      --search-placeholder-color: tomato;
+      --search-boder-bottom: var(--search-placeholder-color);
+      --header-description: tomato;
+
       --card-shadow: #000;
-      --card-border-shadow: 3px;
       --card-bg: #151515;
       --card-color: #bbb;
       --card-author-name: #fff;
