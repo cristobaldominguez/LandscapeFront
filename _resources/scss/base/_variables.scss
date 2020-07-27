@@ -20,6 +20,9 @@
     --comment-text: #000;
     --comment-text-info: #333;
 
+    --search-bg: rgba(255,255,255,.95);
+    --search-text: #666;
+
     --color-red:    #FF0900;
     --color-orange: #FF7F00;
     --color-yellow: #FFEF00;
@@ -30,7 +33,7 @@
   
   @media (prefers-color-scheme: dark) {
     :root {
-      --main-bg:  #222;
+      --main-bg:  rgba(34, 34, 34, 1);
       --border-color: #333;
       --highlight-color: tomato;
       --search-placeholder-color: tomato;
@@ -47,6 +50,9 @@
 
       --comment-text: #fff;
       --comment-text-info: #ccc;
+
+      --search-bg: rgba(34, 34, 34, 1);
+      --search-text: #fff;
       
       --color-red:    #FF583A;
       --color-orange: #FF9032;

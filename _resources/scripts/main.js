@@ -1,10 +1,10 @@
 (function(){
 
   $('.cards').on('click', '.card__highlight', function(event) {
-    const card__data = $(this).next().find('.card__data')
-    const card_hidden = $(this).next().find('.card__hidden')
-    const height = card__data.outerHeight(true) + 'px'
-    card_hidden.get(0).style.setProperty("--current-height", height)
+    const card__data = $(this).next().find('.card__data');
+    const card_hidden = $(this).next().find('.card__hidden');
+    const height = card__data.outerHeight(true) + 'px';
+    card_hidden.get(0).style.setProperty("--current-height", height);
 
     $(this).parent().toggleClass('card--open');
   });
@@ -27,7 +27,15 @@
   
   $('.cards').on('click', '.comment__like', function(event) {
     event.preventDefault();
-    $(this).toggleClass('comment__like-liked')
+    $(this).toggleClass('comment__like-liked');
+  });
+  
+  $('body').on('click', '*', function(event) {
+    event.preventDefault();
+
+    if ($(event.target).closest('.header__main').length < 1) {
+      $('.search').remove();
+    }
   });
 
 })(jQuery)
