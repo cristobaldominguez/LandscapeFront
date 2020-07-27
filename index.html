@@ -8,14 +8,8 @@
 </head>
 <body>
 
+  <div class="hero__div"></div>
   <header class="header__main">
-    <div class="header__picture-div">
-      <picture class="header__picture">
-        <source srcset="./assets/images/header/day.jpg" media="(prefers-color-scheme: light)">
-        <source srcset="./assets/images/header/night.jpg" media="(prefers-color-scheme: dark)">
-        <img class="header__img" src="./assets/images/header/day.jpg">
-      </picture>
-    </div>
     <div class="header__container">
       <h1 class="header__title">Landscapes</h1>
       <form action="#" class="form__search">
@@ -29,63 +23,14 @@
     <li class="card">
       <div class="card__highlight">
         <picture>
-            <source srcset="./assets/images/squared/moon-day.webp" type="image/webp">
-            <source srcset="./assets/images/squared/moon-night.webp" media="(prefers-color-scheme: dark)" type="image/webp">
-            <source srcset="./assets/images/squared/moon-night.jpg" media="(prefers-color-scheme: dark)">
-            <img class="card__img" src="./assets/images/squared/moon-day.jpg">
-        </picture>
-      </div>
-      <div class="card__content">
-        <div class="card__profile-container">
-          <picture>
-            <source srcset="./assets/images/profiles/mj.webp" type="image/webp">
-            <source srcset="./assets/images/profiles/mj.jpg" media="(prefers-color-scheme: dark)">
-            <img class="card__profile" src="./assets/images/profiles/mj.jpg" alt="">
-          </picture>
-        </div>
-        <a class="card__like card__like--red" href="#">
-          <i class="fas fa-heart"></i>
-        </a>
-        <div class="card__title">
-          <h2 class="card__title-text">Moonwalk</h2>
-        </div>
-        <div class="card__author">
-          <h3 class="card__author-name">Michael Jackson</h3>
-        </div>
-
-        <div class="card__hidden">
-          <ul class="social">
-            <li class="social__element">
-              <div class="social__number">8526</div>
-              <div class="social__text">Followers</div>
-            </li>
-            <li class="social__element">
-              <div class="social__number">51,3K</div>
-              <div class="social__text">Likes</div>
-            </li>
-            <li class="social__element">
-              <div class="social__number">106</div>
-              <div class="social__text">Following</div>
-            </li>
-          </ul>
-          <div class="card__follow">
-            <button class="card__follow-btn">Seguir</button>
-          </div>
-        </div>
-      </div>
-    </li>
-
-    <li class="card">
-      <div class="card__highlight">
-        <picture>
             <source srcset="./assets/images/squared/17-night.jpg" media="(prefers-color-scheme: dark)">
             <img class="card__img" src="./assets/images/squared/17-day.jpg">
         </picture>
       </div>
       <div class="card__content">
-        <div class="card__profile-container">
+        <a class="card__profile-container" href="#">
           <img class="card__profile" src="./assets/images/profiles/she.jpg" alt="">
-        </div>
+        </a>
         <a class="card__like card__like--red" href="#">
           <i class="fas fa-heart"></i>
         </a>
@@ -93,26 +38,79 @@
           <h2 class="card__title-text">Golden Gate Bridge, CA</h2>
         </div>
         <div class="card__author">
-          <h3 class="card__author-name">Margot Robbie</h3>
+          <h3 class="card__author-name">
+            <a class="card__author-follow" href="#">Follow</a>
+            Margot Robbie
+          </h3>
         </div>
 
         <div class="card__hidden">
-          <ul class="social">
-            <li class="social__element">
-              <div class="social__number">8526</div>
-              <div class="social__text">Followers</div>
-            </li>
-            <li class="social__element">
-              <div class="social__number">51,3K</div>
-              <div class="social__text">Likes</div>
-            </li>
-            <li class="social__element">
-              <div class="social__number">106</div>
-              <div class="social__text">Following</div>
-            </li>
-          </ul>
-          <div class="card__follow">
-            <button class="card__follow-btn">Seguir</button>
+          <div class="card__data">
+            <ul class="social">
+              <li class="social__element">
+                <div class="social__number">8526</div>
+                <div class="social__text">Followers</div>
+              </li>
+              <li class="social__element">
+                <div class="social__number">51,3K</div>
+                <div class="social__text">Likes</div>
+              </li>
+              <li class="social__element">
+                <div class="social__number">106</div>
+                <div class="social__text">Following</div>
+              </li>
+            </ul>
+
+            <ul class="comment__list">
+              <li class="comment__item">
+                <picture class="comment__item-profile">
+                  <source srcset="./assets/images/profiles/he.webp" type="image/webp">
+                  <source srcset="./assets/images/profiles/he.jpg" media="(prefers-color-scheme: dark)">
+                  <img class="comment__profile" src="./assets/images/profiles/he.jpg" alt="">
+                </picture>
+                <div class="comment__item-content">
+                  <p class="comment__text">
+                    <span class="comment__username">ryanreynolds</span>
+                    Muy lejos, más allá de las montañas de palabras, alejados de los países de las vocales y las consonantes, viven los textos simulados. Viven aislados en casas de letras, en la costa de la semántica, un gran océano de lenguas.
+                  </p>
+                  <p class="comment__info">
+                    <span class="comment__time">hace 25 mins</span>
+                    <a class="comment__like comment__like-liked" href="#"><i class="fas fa-heart"></i></a>
+                    <a class="comment__reply" href="#">reply</a>
+                  </p>
+                </div>
+              </li>
+              <li class="comment__item">
+                <picture class="comment__item-profile">
+                  <source srcset="./assets/images/profiles/mj.webp" type="image/webp">
+                  <source srcset="./assets/images/profiles/mj.jpg" media="(prefers-color-scheme: dark)">
+                  <img class="comment__profile" src="./assets/images/profiles/mj.jpg" alt="">
+                </picture>
+                <div class="comment__item-content">
+                  <p class="comment__text">
+                    <span class="comment__username">michaeljackson</span>
+                    Un riachuelo llamado Pons fluye por su pueblo y los abastece con las normas necesarias. Hablamos de un país paraisomático en el que a uno le caen pedazos de frases asadas en la boca.
+                  </p>
+                  <p class="comment__info">
+                    <span class="comment__time">hace 15 mins</span>
+                    <a class="comment__like" href="#"><i class="fas fa-heart"></i></a>
+                    <a class="comment__reply" href="#">reply</a>
+                  </p>
+                </div>
+              </li>
+            </ul>
+
+            <form class="add_comment" action="#">
+              <picture class="add_comment__profile-container">
+                <source srcset="./assets/images/profiles/she.webp" type="image/webp">
+                <source srcset="./assets/images/profiles/she.jpg" media="(prefers-color-scheme: dark)">
+                <img class="add_comment__profile" src="./assets/images/profiles/she.jpg" alt="">
+              </picture>
+              <div class="add_comment__content">
+                <textarea name="comment[]" class="add_comment__text"></textarea>
+                <button type="submit" class="add_comment__submit">Publicar</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
@@ -123,36 +121,89 @@
         <img class="card__img" src="./assets/images/squared/05.jpg" alt="">
       </div>
       <div class="card__content">
-        <div class="card__profile-container">
+        <a class="card__profile-container" href="#">
           <img class="card__profile" src="./assets/images/profiles/mr.jpg" alt="">
-        </div>
+        </a>
         <div class="card__title">
           <h2 class="card__title-text">Laguna de Aculeo, Paine</h2>
         </div>
         <div class="card__author">
-          <h3 class="card__author-name">Barack Obama</h3>
+          <h3 class="card__author-name">
+            <a class="card__author-following" href="#">Following</a>
+            Barack Obama
+          </h3>
         </div>
         <a class="card__like" href="#">
           <i class="fas fa-heart"></i>
         </a>
 
         <div class="card__hidden">
-          <ul class="social">
-            <li class="social__element">
-              <div class="social__number">10,4K</div>
-              <div class="social__text">Followers</div>
-            </li>
-            <li class="social__element">
-              <div class="social__number">1524</div>
-              <div class="social__text">Likes</div>
-            </li>
-            <li class="social__element">
-              <div class="social__number">215</div>
-              <div class="social__text">Following</div>
-            </li>
-          </ul>
-          <div class="card__follow">
-            <button class="card__follow-btn card__follow-btn--following">Siguiendo</button>
+          <div class="card__data">
+            <ul class="social">
+              <li class="social__element">
+                <div class="social__number">10,4K</div>
+                <div class="social__text">Followers</div>
+              </li>
+              <li class="social__element">
+                <div class="social__number">1524</div>
+                <div class="social__text">Likes</div>
+              </li>
+              <li class="social__element">
+                <div class="social__number">215</div>
+                <div class="social__text">Following</div>
+              </li>
+            </ul>
+            
+            <ul class="comment__list">
+              <li class="comment__item">
+                <picture class="comment__item-profile">
+                  <source srcset="./assets/images/profiles/fl.webp" type="image/webp">
+                  <source srcset="./assets/images/profiles/fl.jpg" media="(prefers-color-scheme: dark)">
+                  <img class="comment__profile" src="./assets/images/profiles/fl.jpg" alt="">
+                </picture>
+                <div class="comment__item-content">
+                  <p class="comment__text">
+                    <span class="comment__username">donfloro</span>
+                    Muy lejos, más allá de las montañas de palabras, alejados de los países de las vocales y las consonantes, viven los textos simulados. Viven aislados en casas de letras, en la costa de la semántica, un gran océano de lenguas.
+                  </p>
+                  <p class="comment__info">
+                    <span class="comment__time">hace 30 mins</span>
+                    <a class="comment__like" href="#"><i class="fas fa-heart"></i></a>
+                    <a class="comment__reply" href="#">reply</a>
+                  </p>
+                </div>
+              </li>
+              <li class="comment__item">
+                <picture class="comment__item-profile">
+                  <source srcset="./assets/images/profiles/she.webp" type="image/webp">
+                  <source srcset="./assets/images/profiles/she.jpg" media="(prefers-color-scheme: dark)">
+                  <img class="comment__profile" src="./assets/images/profiles/she.jpg" alt="">
+                </picture>
+                <div class="comment__item-content">
+                  <p class="comment__text">
+                    <span class="comment__username">margotrobbie</span>
+                    Un riachuelo llamado Pons fluye por su pueblo y los abastece con las normas necesarias. Hablamos de un país paraisomático en el que a uno le caen pedazos de frases asadas en la boca.
+                  </p>
+                  <p class="comment__info">
+                    <span class="comment__time">hace 22 mins</span>
+                    <a class="comment__like" href="#"><i class="fas fa-heart"></i></a>
+                    <a class="comment__reply" href="#">reply</a>
+                  </p>
+                </div>
+              </li>
+            </ul>
+
+            <form class="add_comment" action="#">
+              <picture class="add_comment__profile-container">
+                <source srcset="./assets/images/profiles/mr.webp" type="image/webp">
+                <source srcset="./assets/images/profiles/mr.jpg" media="(prefers-color-scheme: dark)">
+                <img class="add_comment__profile" src="./assets/images/profiles/mr.jpg" alt="">
+              </picture>
+              <div class="add_comment__content">
+                <textarea name="comment[]" class="add_comment__text"></textarea>
+                <button type="submit" class="add_comment__submit">Publicar</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
@@ -163,9 +214,9 @@
         <img class="card__img" src="./assets/images/squared/03.jpg" alt="">
       </div>
       <div class="card__content">
-        <div class="card__profile-container">
+        <a class="card__profile-container" href="#">
           <img class="card__profile" src="./assets/images/profiles/he.jpg" alt="">
-        </div>
+        </a>
         <div class="card__title">
           <h2 class="card__title-text">New York, NY</h2>
         </div>
@@ -177,22 +228,72 @@
         </a>
 
         <div class="card__hidden">
-          <ul class="social">
-            <li class="social__element">
-              <div class="social__number">1258</div>
-              <div class="social__text">Followers</div>
-            </li>
-            <li class="social__element">
-              <div class="social__number">21,4K</div>
-              <div class="social__text">Likes</div>
-            </li>
-            <li class="social__element">
-              <div class="social__number">183</div>
-              <div class="social__text">Following</div>
-            </li>
-          </ul>
-          <div class="card__follow">
-            <button class="card__follow-btn">Seguir</button>
+          <div class="card__data">
+            <ul class="social">
+              <li class="social__element">
+                <div class="social__number">1258</div>
+                <div class="social__text">Followers</div>
+              </li>
+              <li class="social__element">
+                <div class="social__number">21,4K</div>
+                <div class="social__text">Likes</div>
+              </li>
+              <li class="social__element">
+                <div class="social__number">183</div>
+                <div class="social__text">Following</div>
+              </li>
+            </ul>
+            
+            <ul class="comment__list">
+              <li class="comment__item">
+                <picture class="comment__item-profile">
+                  <source srcset="./assets/images/profiles/mr.webp" type="image/webp">
+                  <source srcset="./assets/images/profiles/mr.jpg" media="(prefers-color-scheme: dark)">
+                  <img class="comment__profile" src="./assets/images/profiles/mr.jpg" alt="">
+                </picture>
+                <div class="comment__item-content">
+                  <p class="comment__text">
+                    <span class="comment__username">barackobama</span>
+                    Muy lejos, más allá de las montañas de palabras, alejados de los países de las vocales y las consonantes, viven los textos simulados. Viven aislados en casas de letras, en la costa de la semántica, un gran océano de lenguas.
+                  </p>
+                  <p class="comment__info">
+                    <span class="comment__time">hace 30 mins</span>
+                    <a class="comment__like" href="#"><i class="fas fa-heart"></i></a>
+                    <a class="comment__reply" href="#">reply</a>
+                  </p>
+                </div>
+              </li>
+              <li class="comment__item">
+                <picture class="comment__item-profile">
+                  <source srcset="./assets/images/profiles/she.webp" type="image/webp">
+                  <source srcset="./assets/images/profiles/she.jpg" media="(prefers-color-scheme: dark)">
+                  <img class="comment__profile" src="./assets/images/profiles/she.jpg" alt="">
+                </picture>
+                <div class="comment__item-content">
+                  <p class="comment__text">
+                    <span class="comment__username">margotrobbie</span>
+                    Un riachuelo llamado Pons fluye por su pueblo y los abastece con las normas necesarias. Hablamos de un país paraisomático en el que a uno le caen pedazos de frases asadas en la boca.
+                  </p>
+                  <p class="comment__info">
+                    <span class="comment__time">hace 22 mins</span>
+                    <a class="comment__like comment__like-liked" href="#"><i class="fas fa-heart"></i></a>
+                    <a class="comment__reply" href="#">reply</a>
+                  </p>
+                </div>
+              </li>
+            </ul>
+
+            <form class="add_comment" action="#">
+              <picture class="add_comment__profile-container">
+                <source srcset="./assets/images/profiles/he.webp" type="image/webp">
+                <source srcset="./assets/images/profiles/he.jpg" media="(prefers-color-scheme: dark)">
+                <img class="add_comment__profile" src="./assets/images/profiles/he.jpg" alt="">
+              </picture>
+              <div class="add_comment__content">
+                <textarea name="comment[]" class="add_comment__text"></textarea>
+                <button type="submit" class="add_comment__submit">Publicar</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>

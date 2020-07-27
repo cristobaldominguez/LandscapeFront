@@ -1,4 +1,5 @@
 :root {
+    --follow-border-radius: 5px;
     --main-bg:  #f9f9f9;
     --border-color: #999;
     
@@ -15,13 +16,22 @@
     --social-text: #888;
     --social-number: #000;
     --social-borders: #eee;
+
+    --comment-text: #000;
+    --comment-text-info: #333;
+
+    --color-red:    #FF0900;
+    --color-orange: #FF7F00;
+    --color-yellow: #FFEF00;
+    --color-green:  #00F11D;
+    --color-blue:   #0079FF;
+    --color-purple: #A800FF;
   }
   
   @media (prefers-color-scheme: dark) {
     :root {
       --main-bg:  #222;
       --border-color: #333;
-
       --highlight-color: tomato;
       --search-placeholder-color: tomato;
       --search-boder-bottom: var(--search-placeholder-color);
@@ -34,5 +44,15 @@
       --social-text: #aaa;
       --social-number: #ccc;
       --social-borders: #333;
+
+      --comment-text: #fff;
+      --comment-text-info: #ccc;
+      
+      --color-red:    #FF583A;
+      --color-orange: #FF9032;
+      --color-yellow: #FEDD0F;
+      --color-green:  #4B963E;
+      --color-blue:   #23439F;
+      --color-purple: #561475;
     }
   }

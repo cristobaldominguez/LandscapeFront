@@ -4,18 +4,6 @@
         position: relative;
     }
 
-    &__picture {
-        
-        &-div {
-            overflow: hidden;
-            position: absolute;
-            text-align: center;
-            top: 0;
-            width: 100%;
-            z-index: -1;
-        }
-    }
-
     &__container {
         padding-top: 2em;
         max-width: 512px;
