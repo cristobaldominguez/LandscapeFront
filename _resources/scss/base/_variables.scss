@@ -1,4 +1,6 @@
 :root {
+    --border-radius: 5px;
+    --card-form-height: 512px;
     --body-height: 100vh;
     --follow-border-radius: 5px;
     --main-bg:  #f9f9f9;
@@ -23,6 +25,8 @@
 
     --search-bg: rgba(255,255,255,.95);
     --search-text: #666;
+
+    --dropzone-bg: #ccc;
 
     --color-red:    #FF583A;
     --color-orange: #FF9032;
@@ -54,6 +58,8 @@
 
       --search-bg: rgba(34, 34, 34, 1);
       --search-text: #fff;
+
+      --dropzone-bg: #666;
       
       --color-red:    #FF0900;
       --color-orange: #FF7F00;

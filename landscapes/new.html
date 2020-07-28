@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../assets/styles/style.css">
+  <title>LANDSCAPES | NEW LANDSCAPE</title>
+</head>
+<body>
+  <div class="search__unclick"></div>
+
+  <div class="hero__div"></div>
+  <header class="header__main">
+    <div class="header__container">
+      <h1 class="header__title">Landscapes</h1>
+      <form action="#" class="form__search">
+        <input type="text" name="s" value="" placeholder="Search" class="form__input">
+        <input type="submit" name="" value="&#9906;" class="form__submit">
+        <ul class="form__filters">
+          <li class="form__filter">
+            <input type="checkbox" class="form__input-usuarios" name="usuarios" value="1" checked>
+            <label for="usuarios" class="form__label-usuarios"> Usuarios</label>
+          </li>
+          <li class="form__filter">
+            <input type="checkbox" class="form__input-tags" name="tags" value="1" checked>
+            <label for="tags" class="form__label-tags"> Hashtags</label>
+          </li>
+          <li class="form__filter">
+            <input type="checkbox" class="form__input-landscapes" name="landscapes" value="1" checked>
+            <label for="landscapes" class="form__label-landscapes"> Landscapes</label>
+          </li>
+        </ul>
+      </form>
+      <p class="header__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur quia corrupti praesentium nemo aliquid, eius voluptate vel? Officiis reiciendis at ducimus laboriosam dolor voluptatum, debitis autem dolorem eum error maiores.</p>
+    </div>
+  </header>
+
+  <form action="#" class="card_form dropzone">
+    <div class="card_form__card">
+      <div class="card_form__picture">
+        <div class="card_form__picture-span">
+          <div class="fallback">
+            <input name="file" type="file" multiple />
+          </div>
+        </div>
+      </div>
+
+      <div class="card_form__inputs">
+        <input type="text" name="titulo" class="card_form__input-title" placeholder="Escribe aquí el título">
+        <textarea name="description" class="card_form__input-description" placeholder="Escribe aquí la descripción"></textarea>
+      </div>
+
+    </div>
+    <input type="submit" value="Crear Landscape" class="card_form__submit">
+  </form>
+
+  <footer class="footer__main"></footer>
+
+  <script src="../assets/scripts/lib/jquery-3.3.1.min.js"></script>
+  <script src="../assets/scripts/main.bundle.js"></script>
+</body>
+</html>

@@ -1,5 +1,4 @@
 (function(){
-
   
   function removeSearch() {
     $('.search__lists-results').hide();
@@ -54,5 +53,10 @@
   $('body').on('focus', '.form__input', function(event) {
     addSearch();
   });
+
+  const card_form = $('.card_form__picture')
+  if (card_form.length > 0) {
+    card_form.get(0).style.setProperty("--card-form-height", card_form.width() + 'px');
+  }
 
 })(jQuery)
