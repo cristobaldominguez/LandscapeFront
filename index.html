@@ -7,13 +7,29 @@
   <title>LANDSCAPES</title>
 </head>
 <body>
+  <div class="search__unclick"></div>
 
   <div class="hero__div"></div>
   <header class="header__main">
     <div class="header__container">
       <h1 class="header__title">Landscapes</h1>
       <form action="#" class="form__search">
-        <input type="text" name="s" value="" placeholder="Search" class="form__input"><input type="submit" name="" value="&#9906;" class="form__submit">
+        <input type="text" name="s" value="" placeholder="Search" class="form__input">
+        <input type="submit" name="" value="&#9906;" class="form__submit">
+        <ul class="form__filters">
+          <li class="form__filter">
+            <input type="checkbox" class="form__input-usuarios" name="usuarios" value="1" checked>
+            <label for="usuarios" class="form__label-usuarios"> Usuarios</label>
+          </li>
+          <li class="form__filter">
+            <input type="checkbox" class="form__input-tags" name="tags" value="1" checked>
+            <label for="tags" class="form__label-tags"> Hashtags</label>
+          </li>
+          <li class="form__filter">
+            <input type="checkbox" class="form__input-landscapes" name="landscapes" value="1" checked>
+            <label for="landscapes" class="form__label-landscapes"> Landscapes</label>
+          </li>
+        </ul>
       </form>
       <div class="search">
         <ul class="search__list-results">
