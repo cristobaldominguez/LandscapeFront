@@ -2,25 +2,71 @@
     margin-top: .5em;
     position: relative;
     
-    &__list-results {
-        background-color: var(--search-bg);
-        box-shadow: 0 10px 15px rgba(0,0,0,.5);
-        box-sizing: border-box;
-        border-radius: 0 0 5px 5px;
-        display: none;
-        position: absolute;
-        padding: 2em 1em;
+    &__list {
         margin: 0;
-        width: 100%;
-        z-index: 3;
+        padding: 0;
+
+        &-users {
+            @extend .search__list;
+        }
+
+        &-tags {
+            @extend .search__list;
+        }
+
+        &-landscapes {
+            @extend .search__list;
+            text-align: center;
+        }
+
+        &-name {
+            border-bottom: 1px solid var(--border-color);
+            color: var(--search-text);
+            font-size: .9em;
+            text-align: center;
+            margin: .5em 0 0;
+            
+            &--landscapes {
+                @extend .search__list-name;
+                margin: .5em 0;
+            }
+        }
+
+        &s {
+
+            &-results {
+                background-color: var(--search-bg);
+                box-shadow: 0 10px 15px rgba(0,0,0,.5);
+                box-sizing: border-box;
+                border-radius: 0 0 5px 5px;
+                display: none;
+                position: absolute;
+                padding: 1em 1em 2em;
+                margin: 0;
+                width: 100%;
+                z-index: 3;
+            }
+        }
+
+        &-footer {
+            text-align: center;
+            font-size: .9em;
+            margin: .5em 0 2em;
+        }
     }
 
     &__result {
         display: block;
         list-style: none;
         
-        &:last-child .search__link {
+        &:last-of-type .search__link {
             border-bottom: none;
+        }
+
+        &-image {
+            display: inline-block;
+            list-style: none;
+            width: 230px;
         }
     }
 
@@ -42,7 +88,7 @@
 
     &__link {
         align-items: center;
-        border-bottom: 1px solid var(--border-color);
+        border-bottom: 1px solid var(--search-boder-bottom);
         display: flex;
         justify-content: space-between;
         padding: .75em 0;
@@ -58,6 +104,15 @@
                 border-color: var(--search-text);
                 color: var(--search-bg);
             }
+        }
+
+        &--landscape {
+            display: block;
+        }
+
+        &-footer {
+            text-decoration: none;
+            color: var(--color-blue);
         }
     }
 
@@ -81,6 +136,13 @@
             bottom: 172px;
         }
     }
+
+    &__landscape {
+
+        &-image {
+            width: 100%;
+        }
+    }
 }
 
 @media (max-width: 400px) {
@@ -91,5 +153,9 @@
         &:before {
             bottom: 174px;
         }
+    }
+
+    .search__result-image {
+        width: 150px;
     }
   }

@@ -2,7 +2,7 @@
 
   
   function removeSearch() {
-    $('.search__list-results').hide();
+    $('.search__lists-results').hide();
     $('.search__unclick').hide();
     $('.form__filters').removeClass('form__filters--open');
   }
@@ -11,7 +11,7 @@
     const body_height = Math.round($('body').height());
     document.body.style.setProperty("--body-height", body_height + 'px');
 
-    $('.search__list-results').show();
+    $('.search__lists-results').show();
     $('.search__unclick').show();
     $('.form__filters').addClass('form__filters--open');
   }

@@ -6,7 +6,7 @@
     
     --highlight-color: #000;
     --search-placeholder-color: #000;
-    --search-boder-bottom: var(--border-color);
+    --search-boder-bottom: #ccc;
     --header-description: #000;
 
     --card-shadow: #c3c3c3;
@@ -34,11 +34,11 @@
   
   @media (prefers-color-scheme: dark) {
     :root {
-      --main-bg:  rgba(34, 34, 34, 1);
+      --main-bg: rgba(34, 34, 34, 1);
       --border-color: #333;
       --highlight-color: tomato;
       --search-placeholder-color: tomato;
-      --search-boder-bottom: var(--search-placeholder-color);
+      --search-boder-bottom: #333;
       --header-description: tomato;
 
       --card-shadow: #000;
