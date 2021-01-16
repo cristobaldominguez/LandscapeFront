@@ -1,4 +1,8 @@
 (function(){
+
+  $('a[href="#"]').on('click', function(e) {
+    e.preventDefault();
+  })
   
   function removeSearch() {
     $('.search__lists-results').hide();
